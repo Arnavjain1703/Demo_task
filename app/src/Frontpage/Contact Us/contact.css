@@ -1,0 +1,197 @@
+.contact .padding
+{
+    padding: 50px 40vw;
+}
+.contact input{
+    background: transparent;
+    border: 3px solid #262537;
+    border-radius: 3%;
+    font-family: 'Montserrat', sans-serif;
+    color: #262537;
+    padding-left:10px;
+    width:70%;
+    height:50px;
+    letter-spacing:4px;
+    font-weight:600;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} 
+.contact label{
+    text-align:left !important;
+    color:#262537;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+.contact .form-padding
+{
+    padding-left: 10vw; 
+}
+.contact textarea
+{
+    background: transparent;
+    border: 3px solid #262537;
+    border-radius: 3%;
+    color: #262537;
+    width:70%;
+    height: 150px;
+    padding-left:10px;
+    letter-spacing:2px;
+    font-weight: 600;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+.contact .error
+{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact .opacity
+{
+    opacity:0
+}
+.contact .invalid
+{
+    border:2px solid red;
+}
+
+.contact img 
+{
+    width: 60% !important;
+}
+.contact button,
+.contact button::after {
+	transition: all 0.3s;
+}
+
+.contact button {
+  background: none;
+  
+  border-radius:3% !important;
+  border: 1px solid #262537 ;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size:1vw !important;
+  font-weight: 600;
+  margin: 1em auto;
+  padding:0.5vw 1.2vw;
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  left: -6vw;
+}
+
+
+.contact button::before,
+.contact button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.contact .btn-4
+{
+    position: relative;
+    z-index: 10;
+}
+.contact .btn-4::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .contact .btn-4::after {
+    background:#262537;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .contact .btn-4:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+  .contact button:hover {
+  color: #262537;
+}
+@media only screen and (max-width: 991px) {
+    .contact button{
+        font-size: 2vw !important;
+        
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact .display
+    {
+        display:none;
+    }
+    .contact .form-padding
+    {
+        padding-left: 0px;
+        
+    }
+    .contact input, .contact textarea
+    {
+        width: 60%;
+    }
+    .contact .form-center
+    {
+        text-align: center;
+    }
+    .contact .label-padding
+    {
+        padding-left: 20vw;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .contact .display
+    {
+        margin-top:10vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact input, .contact textarea
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .contact .padding
+    {
+        padding: 50px 30vw;
+    }
+    .contact .form-padding
+    {
+        padding-left: 0px;
+        
+    }
+    .contact input, .contact textarea
+    {
+        width: 80%;
+    }
+    .contact .form-center
+    {
+        text-align: center;
+    }
+    .contact .label-padding
+    {
+        padding-left: 10vw;
+    }
+    .contact button{
+        font-size: 4vw !important;
+        padding:2vw 4vw;
+        left: 0;
+    }
+}

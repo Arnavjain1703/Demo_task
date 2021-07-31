@@ -1,0 +1,87 @@
+.wedo .letter
+{
+    position:absolute;
+    top:215vh;
+    
+    background:#262537;
+    height: 18vw;
+    width: 100vw;
+}
+.wedo img{
+    height:30vw;
+}
+.wedo{
+    background: url(/assets/wall.png);
+    background-attachment: fixed;
+}
+.wedo .heading
+{
+    margin-bottom:3vh;
+    padding-top: 2vh;
+}
+.wedo .col-md-8
+{
+    padding:7vw 100px;
+}
+.wedo .mobile
+    {
+        display:none;
+    }
+.wedo .font2
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: 1024px) {
+    .wedo .letter
+    {
+        top:208vh
+    }
+}
+@media only screen and (max-width: 991px) {
+    .wedo .letter
+    {
+        top:285vh
+    }
+}
+@media only screen and (max-width: 991px) {
+    .wedo .letter
+    {
+        top:280vh
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wedo .web
+    {
+        display: none;
+    }
+    .wedo .mobile
+    {
+        display: block;
+        height: 100vh;
+        background:#262537;
+    }
+    .wedo .col-12
+    {
+        text-align: center;
+    }
+    .wedo .col-12{
+        padding-top:0vh;
+    }
+    .wedo img 
+    {
+        height:50vh;
+    }
+    .wedo .font2{
+        font-size:3vh;
+        padding-top:3vh
+    }
+    .wedo .heading{
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size:5vw;
+        margin-bottom: 0px;
+    }
+}

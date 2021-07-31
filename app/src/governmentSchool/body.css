@@ -1,0 +1,79 @@
+.govt .upper
+{
+    background:url(/assets/govt.png);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 28vh;
+    background-attachment: fixed;
+}
+.govt #dropdown-basic
+{
+    background:#252537;
+    border-radius: 100px;
+}
+.govt #border
+{
+    border-radius: 100px;
+    left:35vw;
+    top:20px;
+    position: relative;
+    margin-bottom:20px;
+}
+.govt .layer
+{
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    top:0;
+    opacity:0.3;
+}
+.govt .name1
+{
+    color: white;
+    font-size:7vw;
+    letter-spacing: 4px;
+    padding-left:10vw;
+    font-weight: 900;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+}
+.govt .name2
+{
+    color: white;
+    font-size:7vw; 
+    letter-spacing: 4px;
+    font-weight: 900;
+    padding-left:45vw;
+    width:100vw;
+    position: relative;
+    z-index: 10;
+}
+.govt .bg
+{
+    
+    background: url('/assets/wall.png');
+    background-position:center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    width:100%;
+    height: 100%;
+}
+@media only screen and (max-width: 500px) {
+    .govt .upper
+    {
+        padding-top: 40vh;
+    }
+    .govt .name1,.govt .name2
+    {
+        font-weight: 10vw;
+    }
+    .govt #border
+    {
+        left:20vw
+    }
+}

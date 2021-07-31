@@ -1,0 +1,25 @@
+.donation
+{
+    background: url(/assets/wall.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height:100vh;
+}
+.donation .row
+{
+    margin-top: 100px;
+}
+.donation img{
+    width: 60%;
+}
+.donation .image
+{
+    text-align: center;
+    padding-top: 100px;
+}
+.Abc
+{
+    background: red;
+}

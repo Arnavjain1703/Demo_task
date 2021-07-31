@@ -1,0 +1,87 @@
+Forntend=====================================================================================================
+
+WEB URL:https://education-demo-82c80.web.app/
+
+Here is the hosted web
+
+The web is having a Course option on the frontend page, the user will get a list of courses after selecting that option,
+
+**If the user is not Authenticated he will be redirected to the login page** 
+  
+OTP verification id there for Email, SendGrid is used as the third party package
+  
+Forgot password is also there
+  
+**Backend is hosted on Heroku**
+   
+MongoDB is used as a database
+
+
+BACKEND==========================================================================================================
+for user 
+signup :- https://backendeducationportal.herokuapp.com/Signup
+
+body:
+
+    {
+    "name":"Arnav",
+    "password":"Arnav@123",
+    "email":"11as1827000588@gmail.com",
+   }
+
+response:-
+{
+    "message": "OTP IS SEND TO YOUR MAIL PLEASE VERIFY YOURSELF",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjExYXMxODI3MDAwNTg4QGdtYWlsLmNvbSIsInVzZXJJZCI6IjYwZDA0NDFjZDNhYzJhMDEzODM2OTRhNCIsImlhdCI6MTYyNDI2MTY2MCwiZXhwIjoxNjI0MzQ4MDYwfQ.2mu16uxP6BnWy09oQgqr4oLKiQR6ycHnfZ3exNeXvOk",
+    "userId": "60d0441cd3ac2a01383694a4"
+}
+
+:-After Signup otp will be send to the mail
+
+otp Verifivation Url:-https://backendeducationportal.herokuapp.com/otpVerification
+Token must be there in headers by the name of Authorization
+body
+{
+    "otp":"3121",
+}
+response:
+{
+    "message": "User Verified"    
+}
+
+resendotp Url:https://backendeducationportal.herokuapp.com/resendotp
+Token should be there in headers by the name of Authorization
+
+login:- Url https://backendeducationportal.herokuapp.com/login
+body
+{
+     "name":"Arnav",
+    "password":"Arnav@123",
+    "email":"11as1827000588@gmail.com"
+}
+response
+{
+    {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjExYXMxODI3MDAwNTg4QGdtYWlsLmNvbSIsInVzZXJJZCI6IjYwZDA0NDFjZDNhYzJhMDEzODM2OTRhNCIsImlhdCI6MTYyNDI2MjM2MiwiZXhwIjoxNjI0MzQ4NzYyfQ.MSmTvnu_AqruyaLQCQmqLRhep7A9kFUABsnePILsA4w",
+    "user": {
+        "verified": true,
+        "_id": "60d0441cd3ac2a01383694a4",
+        "email": "11as1827000588@gmail.com",
+        "password": "$2a$12$S6xCeNxpm6jt669QN4P.sOGDO5zQsu0EhWcVQOp4VrVtAn4v.UFAW",
+        "name": "Arnav",
+        "__v": 0
+    }
+}
+}
+
+
+Token should be there in headers by the name of Authorization
+=================================================================================
+
+
+
+All the url are fully validated
+
+
+https://backendeducationportal.herokuapp.com
+Demo task is Hosted on Heroku 

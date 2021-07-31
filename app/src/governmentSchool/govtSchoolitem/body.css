@@ -1,0 +1,167 @@
+.school-item
+{
+    display: inline;
+    
+}
+.school-item .width
+{
+    width: 25vw !important;
+    min-height:400px;
+    float: left;
+    padding:1vw;
+    color: #262537;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:4px;
+}
+.school-item textarea
+{
+    background: transparent;
+}
+.school-item img
+{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.school-item .card
+{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    min-height: 400px;
+    overflow: hidden;
+    background: transparent;
+
+}
+.school-item .name
+{
+    font-weight: 700;
+    margin-bottom:8px;
+}
+.school-item .address
+{
+    margin-bottom:8px;
+}
+.school-item textarea
+{
+    border: 0px solid white;
+    width: 100%;
+    height:80px;
+    text-align: center;
+    overflow: hidden;
+}
+.school-item .address
+{
+    letter-spacing: 2px;
+}
+.school-item button,
+.school-item button::after {
+	transition: all 0.3s;
+}
+
+.school-item button {
+  background: none;
+  
+  border-radius:3% !important;
+  border: 1px solid #262537 ;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size:1vw !important;
+  font-weight: 600;
+  margin: 1em auto;
+  padding:0.5vw 1.2vw;
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  left: -0.5vw;
+  margin-top: 0px;
+}
+
+
+.school-item button::before,
+.school-item button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.school-item .btn-4
+{
+    position: relative;
+    z-index: 10;
+}
+.school-item .btn-4::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .school-item .btn-4::after {
+    background:#262537;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .school-item .btn-4:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+  .school-item button:hover {
+  color: #262537;
+}
+@media only screen and (max-width: 991px) {
+    .school-item button{
+        font-size: 2vw !important;
+        
+    }
+}
+@media only screen and (max-width: 910px) {
+    .school-item button{
+        font-size: 1.5vw !important;
+        
+    }
+    .school-item .address
+    {
+        font-size: 1.5vw;
+    }
+    .school-item textarea
+    {
+        font-size: 1.4vw;
+        height: 60px;
+    }
+    .school-item img{
+        height: 130px;
+    }
+    .school-item .card{
+        min-height:300px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .school-item .width
+    {
+        width: 50vw !important;
+    }
+    .school-item .width{
+        min-height: 200px;
+    }
+    .school-item .address{
+        font-size: 3vw;
+        font-weight: 800;
+    }
+    .school-item textarea{
+        height: 50px;
+        font-size: 3vw;
+    }
+    .school-item button{
+        font-size: 2.5vw !important;
+        padding: 1vw 2vw;
+    }
+}
+
+
+

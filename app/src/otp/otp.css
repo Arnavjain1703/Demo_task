@@ -1,0 +1,126 @@
+.otp{
+  background:url(/assets/wall.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+.otp button::after {
+transition: all 0.3s;
+
+}
+
+.otp button {
+background:none;
+
+border-radius:3% !important;
+border: 1px solid #262537 ;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+display: block;
+font-size:10px !important;
+font-weight: 400;
+margin: 1em auto;
+padding:0.5vw 1.2vw;
+position: relative;
+letter-spacing: 2px;
+text-transform: uppercase;
+left: 3.5vw;
+
+}
+
+
+.otp button::before,
+.otp button::after {
+background:#FFF;
+content: '';
+position: absolute;
+z-index: -1;
+}
+.otp .btn-4
+{
+  position: relative;
+  z-index: 100;
+}
+.otp .btn-4::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.otp .btn-4::after {
+  background:#262537;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.otp .btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.otp button:hover {
+color: #262537;
+}
+.otp .box {
+margin:10rem 0rem;
+border-radius:5px;
+box-shadow:2px 2px 10px rgba(0,0,0,0.2);
+background: white;
+padding:10px;
+}
+.otp input{
+  margin-bottom: 3%;
+  background: transparent;
+  border: 2px solid #262537;
+  border-radius: 3%;
+  font-family: 'Montserrat', sans-serif;
+  color: #262537;
+  padding-left:10px;
+  width:70%;
+  height:30px;
+  letter-spacing:4px;
+  font-weight:600;
+  
+} 
+
+.otp .text-center
+{
+color:"#262537";
+font-family: 'Montserrat', sans-serif;
+font-size:18px;
+letter-spacing: 4px;
+margin-bottom: 20px;
+}
+.otp .col-xs-6
+{
+padding: 0px 10px;
+
+}
+@media only screen and (max-width:501px) {
+.otp button
+{
+   left: 20vw ;
+   padding:5px 7px;
+}
+}
+@media only screen and (max-width:376px) {
+.otp button
+{
+   left: 15vw ;
+   padding:5px 7px;
+}
+}
+@media only screen and (max-width:321px) {
+.otp button
+{
+   left: 10vw ;
+   padding:5px 7px;
+}
+}

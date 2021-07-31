@@ -1,0 +1,3 @@
+
+export const CHANGE_LOADER='CHANGE_LOADER'
+export const SCHOOLS='SCHOOLS'

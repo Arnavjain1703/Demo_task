@@ -1,0 +1,167 @@
+.center {
+    text-align: center;
+}
+
+
+.Container {
+    border: 1px solid #262537;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22) !important; */
+    box-shadow:0px 20px 20px 2px rgba(184,168,206,1);
+    position: relative;
+    z-index: 1;
+    border-radius: 5%;
+}
+
+
+.Ngo
+{
+  width:79%;
+}
+.School
+{
+   width: 80%;
+  
+}
+.Donate{
+   width: 80%;
+}
+.Announcement{
+    width:58%;
+}
+
+button,
+button::after {
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  
+  border-radius:3% !important;
+  border: 1px solid #262537 ;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size:1vw !important;
+  font-weight: 600;
+  margin: 1em auto;
+  padding:0.5vw 1.2vw;
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  left:7vw;
+}
+
+.font2
+{
+   color: #262537;
+   font-family: 'Montserrat', sans-serif;
+   font-size:1.3vw;
+   margin-top: 10px;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.btn-4::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-4::after {
+    background:#262537;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-4:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+button:hover {
+  color: #262537;
+}
+.para {
+    margin-top: 10px;
+    color: #262537;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.search-item {
+    padding: 0px 10px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .para {
+        font-size: 15px;
+    }
+    .font2{
+   
+   font-size:1.5vw;
+   margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    button{
+        font-size: 2vw !important;
+        left: 18vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+   button{
+       font-size: 2vw !important;
+       left: 15vw;
+   }
+   .font2{
+    font-size:2vw;
+    margin-top: 10px;
+     }
+     .para{
+         margin-top:5px;
+     }
+}
+
+@media only screen and (max-width: 500px) {
+    .para {
+        font-size: 10px;
+    }
+    .font2{
+        font-size:3.5vw;
+        margin-top: 10px;
+         }
+
+    .search-item {
+
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 455px) {
+    .para {
+        font-size: 10px;
+    }
+
+    .search-item {
+
+        margin-bottom: 10px;
+        padding: 0px 5px;
+    }
+    button{
+        font-size: 3vw !important; 
+    }
+}
